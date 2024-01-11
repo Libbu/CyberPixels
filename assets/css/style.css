@@ -122,6 +122,30 @@ body {
     margin-bottom: 2rem;
 }
 
+/*--------------------------------------------------------------------------------Destinations Page */
+
+.img-fluid {
+    position: relative;
+    text-align: center;
+    min-width: 100%;
+}
+
+.destinations-header-text {
+    color: #FFE6E8;
+    font-family: "Italiana", sans-serif;
+    font-size: 5rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    font-weight: bold;
+    margin: 0;
+}
+
+.destination-text {
+    padding: 10px 20px;
+}
 
 /*--------------------------------------------------------------------------------Footer*/
 
@@ -168,7 +192,7 @@ footer {
 
 
 
-/*--------------------------------------------------------------------------------media query for mobile responsiveness in navbar*/
+/*--------------------------------------------------------------------------------media query for mobile */
 
 @media screen and (max-width: 446px) {
 
@@ -176,18 +200,82 @@ footer {
         font-family: "Italiana", sans-serif;
         font-size: 1.5rem;
     }
+
+    .destinations-header-text {
+        color: #FFE6E8;
+        top: 50%;
+        font-size: 3rem;
+    }
+
+    .destinations-header-text-j-i {
+        color: #FFE6E8;
+        top: 25%;
+        font-size: 3rem;
+    }
 }
+
+
+/*--------------------------------------------------------------------------------media query for laptop & pc*/
+
 
 
 /*--------------------------------------------------------------------------------media query for showcase overlay on desktop*/
 
+
+
 @media screen and (min-width: 1024px) {
+
 
     /*--------------------------------------------------------------------------------showcase overlay*/
 
     .showcase-container-center {
         text-align: center;
 
+    }
+
+    .slide-container {
+        position: relative;
+        width: 100%;
+    }
+
+    .image {
+        display: block;
+        border-radius: 25px;
+        height: auto;
+        max-width: 100%;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .overlay {
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgba(10, 16, 13, 0.5);
+        border-radius: 25px;
+        overflow: hidden;
+        width: 100%;
+        height: 0;
+        transition: .5s ease;
+    }
+
+    .slide-container:hover .overlay {
+        bottom: 0;
+        height: 100%;
+    }
+
+    .overlay-text {
+        white-space: nowrap;
+        color: #ffe6e8;
+        font-family: "Italiana", sans-serif;
+        font-size: 3rem;
+        position: absolute;
+        overflow: hidden;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
     }
 
     .slide-container {
