@@ -131,12 +131,12 @@ body {
 }
 
 .destinations-header-text {
-    color: #0A100D;
+    color: #FFE6E8;
     font-family: "Italiana", sans-serif;
-    font-size: 3rem;
+    font-size: 5rem;
     position: absolute;
     left: 50%;
-    bottom: 75%;
+    top: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     font-weight: bold;
@@ -207,6 +207,13 @@ footer {
     .destinations-header-text {
         color: #FFE6E8;
         top: 50%;
+        font-size: 3rem;
+    }
+
+    .destinations-header-text-j-i {
+        color: #FFE6E8;
+        top: 25%;
+        font-size: 3rem;
     }
 }
 
